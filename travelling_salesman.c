@@ -1,4 +1,5 @@
 //Travelling sales man problem
+//Contributor algorithm. Anything smaller than this is aprreciated. If so make pull requests.
 
 #include<stdio.h>
 int a[10][10],visited[10],n,cost=0;
