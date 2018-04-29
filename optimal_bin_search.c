@@ -3,7 +3,7 @@
 #include<stdio.h>
 void main()
 {
-int w[100][100],c[100][100],r[100][100],p[100],q[100],temp=0,root,min,min1,n,i,j,k,b;
+int w[100][100],c[100][100],r[100][100],p[100],q[100],temp=0,min,min1,n,i,j,k,b;
 printf("enter the number of elements:");
 scanf("%d",&n);
 printf("\n");
@@ -58,6 +58,6 @@ printf("W[%d][%d]:%d\tc[%d][%d]:%d\tr[%d][%d]:%d\n",i,j,w[i][j],i,j,c[i][j],i,j,
 printf("\n");
 }
 printf("minimum cost=%d\n",c[0][n]);
-root=r[0][n];
-printf("Root=%d\n",root);
+printf("Root=%d\n",r[0][n]);
 }
+
