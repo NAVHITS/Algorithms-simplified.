@@ -49,13 +49,6 @@ for(j=0;j<n;j++)
 scanf("%d",&a[i][j]);
 visited[i]=0;
 }
-printf("\n \n The cost list is:\n\n");
-for(i=0;i<n;i++)
-{
-printf("\n\n");
-for(j=0;j<n;j++)
-printf("\t %d",a[i][j]);
-}
 printf("\n\n The path is:\n\n");
 mincost(0);
 printf("\n\n Minimum Cost:");
