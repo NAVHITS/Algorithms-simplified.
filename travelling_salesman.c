@@ -51,7 +51,6 @@ visited[i]=0;
 }
 printf("\n\n The path is:\n\n");
 mincost(0);
-printf("\n\n Minimum Cost:");
-printf("%d",cost);
+printf("\n\n Minimum Cost: %d",cost);
 return 0;
 }
