@@ -1,5 +1,5 @@
 //Travelling sales man problem
-//Contributor algorithm. Anything smaller than this is aprreciated. If so make feel free to make commits.
+//Contributor's algorithm. Anything smaller than this is aprreciated. If so feel free to make commits.
 
 #include<stdio.h>
 int a[10][10],visited[10],n,cost=0;
