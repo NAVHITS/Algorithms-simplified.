@@ -4,20 +4,6 @@
 #include<stdio.h>
 int a[10][10],visited[10],n,cost=0;
 int least(int);
-void get()
-{
-int i,j;
-printf("Enter the number of cities:");
-scanf("%d",&n);
-printf("\n Enter the cost Matrix\n");
-for(i=0;i<n;i++)
-{
-printf("\n Enter Elements of rows # :%d\n",i+1);
-for(j=0;j<n;j++)
-scanf("%d",&a[i][j]);
-visited[i]=0;
-}
-}
 void mincost(int city)
 {
 int i,ncity;
@@ -51,16 +37,29 @@ if(min!=999)
 cost+=kmin;
 return nc;
 }
-void put()
-{
-printf("\n\n Minimum Cost:");
-printf("%d",cost);
-}
 int main()
 {
-get();
+int i,j;
+printf("Enter the number of cities:");
+scanf("%d",&n);
+printf("\n Enter the cost Matrix\n");
+for(i=0;i<n;i++)
+{
+printf("\n Enter Elements of rows # :%d\n",i+1);
+for(j=0;j<n;j++)
+scanf("%d",&a[i][j]);
+visited[i]=0;
+}
+printf("\n \n The cost list is:\n\n");
+for(i=0;i<n;i++)
+{
+printf("\n\n");
+for(j=0;j<n;j++)
+printf("\t %d",a[i][j]);
+}
 printf("\n\n The path is:\n\n");
 mincost(0);
-put();
+printf("\n\n Minimum Cost:");
+printf("%d",cost);
 return 0;
 }
