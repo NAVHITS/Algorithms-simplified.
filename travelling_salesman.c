@@ -42,10 +42,9 @@ int main()
 int i,j;
 printf("Enter the number of cities:");
 scanf("%d",&n);
-printf("\n Enter the cost Matrix\n");
 for(i=0;i<n;i++)
 {
-printf("\n Enter Elements of rows # :%d\n",i+1);
+printf("\n Enter elements of row %d:\n",i+1);
 for(j=0;j<n;j++)
 scanf("%d",&a[i][j]);
 visited[i]=0;
