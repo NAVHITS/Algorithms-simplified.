@@ -36,21 +36,21 @@ int main()
    knap(n, w, p, cap);
    return(0);
 }
-void knap(int n, int weight[], int profit[], int capacity) {
-   int i, j, u= capacity, x[20], tp = 0;
+void knap(int n, int w[], int p[], int cap) {
+   int i, j, u= cap, x[20], tp = 0;
    for (i = 0; i < n; i++)
       x[i] = 0;
    for (i = 0; i < n; i++) {
-      if (weight[i] > u)
+      if (w[i] > u)
          break;
       else {
          x[i] = 1;
-         tp = tp + profit[i];
-         u = u - weight[i];
+         tp = tp + p[i];
+         u = u - w[i];
       }
    }
    if (i < n)
-      x[i] = u / weight[i];
-   tp = tp + (x[i] * profit[i]);
+      x[i] = u / w[i];
+   tp = tp + (x[i] * p[i]);
    printf("\nTotal profit is:- %d", tp);
 }
