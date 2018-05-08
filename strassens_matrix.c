@@ -23,7 +23,7 @@
 //c1=p4+p5+p6-p2
 //c2=p1+p2
 //c3=p3+p4
-c4=p1-p3+p5-p7
+//c4=p1-p3+p5-p7
 
 //Put them together in tge matrix form.
 //Strassens method done. (Don't ask me why it works this way.)
