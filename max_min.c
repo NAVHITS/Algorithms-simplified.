@@ -42,21 +42,21 @@ void maxmin(int i, int j)
 int main ()
 {
  int i, n;
- clock_t start_t, end_t, total_t;
- start_t =clock();
- printf ("\nHow many elements?\n");
- scanf ("%d",&n);
- printf ("\nEnter the numbers : \n");
+ clock_t t;
+ t=clock();
+ printf("\nHow many elements?\n");
+ scanf("%d",&n);
+ printf("\nEnter the numbers : \n");
  for (i=1;i<=n;i++)
-  scanf ("%d",&a[i]);
+  scanf("%d",&a[i]);
 
  max = a[0];
  min = a[0];
  maxmin(1, n);
- printf ("Minimum element in an array : %d\n", min);
- printf ("Maximum element in an array : %d\n", max);
- end_t=clock();
- total_t=(double)(end_t - start_t);
- printf("Timespent: %f", total_t);
+ printf("Minimum element in an array : %d\n", min);
+ printf("Maximum element in an array : %d\n", max);
+ t=clock()-t;
+ double total=((double)t);
+ printf("Timespent: %f", total);
  return 0;
 }
