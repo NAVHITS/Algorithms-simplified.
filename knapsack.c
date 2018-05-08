@@ -52,5 +52,5 @@ void knap(int n, int weight[], int profit[], int capacity) {
    if (i < n)
       x[i] = u / weight[i];
    tp = tp + (x[i] * profit[i]);
-   printf("\nMaximum profit is:- %d", tp);
+   printf("\nTotal profit is:- %d", tp);
 }
